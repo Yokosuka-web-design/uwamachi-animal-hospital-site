@@ -41,6 +41,9 @@
 }
 </script>
 
+<link data-theme rel="preconnect" href="https://fonts.googleapis.com">
+<link data-theme rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link data-theme rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap">
 <style>
   :root{
     --ink:#15171B; --dark:#0F1D3D; --dark2:#1B2A4D; --accent:#2563EB; --accent-d:#1D4ED8;
@@ -286,6 +289,71 @@
   }
   @media (min-width:601px){ .sheet-bar{bottom:12px} }
   @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+
+
+/* THEME-LAYER-START */
+/* Direction: trustworthy, friendly vet — ref. large US animal-hospital networks
+   (calm teal + white, rounded friendly type, "hours / call / first visit" up front, soft rounded cards). */
+:root{
+  --ink:#1f2b2a; --dark:#0d4d4a; --dark2:#12605c; --accent:#0f8a7e; --accent-d:#0b6f66;
+  --paper:#ffffff; --fog:#eef7f5; --rule:#d6e7e3; --mute:#58706c;
+  --en:"Nunito","M PLUS Rounded 1c",system-ui,sans-serif;
+  --jp:"M PLUS Rounded 1c","Hiragino Maru Gothic ProN",system-ui,sans-serif;
+}
+h1,h2,.steps h3,.cell b,.taxi .addr{word-break:auto-phrase}
+h1,h2{text-wrap:balance;letter-spacing:0}
+h1{font-weight:800}
+.bar{background:#fff;color:var(--dark);box-shadow:0 1px 0 var(--rule)}
+.logo{color:var(--dark)}
+.logo span{color:var(--mute)}
+.nav a{color:var(--mute)} .nav a:hover{color:var(--dark)}
+.call{background:var(--accent);color:#fff;border-radius:999px}
+.lang{border-color:var(--rule);color:var(--dark);border-radius:999px}
+.lang:hover{background:var(--fog)}
+.hero{background:linear-gradient(180deg,#e3f3ef 0%,#f4fbf9 100%);color:var(--ink)}
+.kick{color:var(--accent)}
+h1 small{color:var(--mute)}
+.hero-g p{color:#3b4f4c}
+.hero .shot img{border:0;border-radius:20px}
+.hero .credit{color:var(--mute)}
+.glance{border-top:0;border-radius:20px;box-shadow:0 10px 30px rgba(13,77,74,.12);overflow:hidden}
+.btn{border-radius:999px;border-color:var(--dark);color:var(--dark)}
+.btn.pri{background:var(--accent);border-color:var(--accent)}
+.eyebrow{color:var(--accent)}
+.steps li{border-radius:16px;border-top:4px solid var(--accent)}
+.steps .kana{border-radius:6px}
+.phrases{background:var(--dark)}
+.phrases .eyebrow{color:#9fe0d4}
+.phrases .sub,.phr .ro{color:#cfe7e2}
+.phr li{background:var(--dark2);border-top-color:#9fe0d4;border-radius:14px}
+.phr .mn{color:#9fe0d4}
+.hear{border-radius:999px}
+.chip{border-radius:14px}
+.chip[aria-pressed="true"]{background:#e3f6f2}
+.sheet-bar{border-radius:16px}
+.show-top{background:var(--dark)}
+.show-top button{border-radius:999px}
+table.hrs tr.today{background:#e3f6f2}
+.route li::before{background:var(--accent);border-radius:50%}
+.pics img,.map{border-radius:14px}
+.taxi,.urgent{border-radius:0 14px 14px 0}
+.urgent{border-left-color:#d9583b;background:#fff4f0}
+.chk thead th{background:var(--dark);border-color:var(--dark)}
+footer{background:var(--dark);color:#bfd8d3}
+.dock{background:var(--dark)}
+.dock a.pri{background:var(--accent)}
+@media (max-width:600px){
+  .hero{padding-top:20px}
+  h1{font-size:30px}
+  .glance{margin-top:18px}
+  .chk tbody th{background:var(--dark)}
+  .cell b{font-size:15px}
+}
+.steps li li{counter-increment:none;border:0;border-radius:0;padding:2px 0;background:none}
+.steps li li::before,html[lang="ja"] .steps li li::before{content:none}
+
+/* THEME-LAYER-END */
 </style>
 </head>
 <body>
